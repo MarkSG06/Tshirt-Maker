@@ -2,15 +2,5 @@ const express = require('express')
 const router = express.Router()
 
 router.use('/maker', require('./customer/maker'))
-router.use('/admin/users', require('./admin/users'))
-router.use('/admin/customers', require('./admin/customers'))
-router.use('/admin/emails', require('./admin/emails'))
-router.use('/customer/customers', require('./customer/customer'))
-
-router.use('/auth', require('./auth/auth-activates'))
-router.use('/auth/user', require('./auth/auth-users'))
-router.use('/auth/customer', require('./auth/auth-customers'))
-
-
 
 module.exports = router
